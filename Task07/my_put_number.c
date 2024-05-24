@@ -22,27 +22,7 @@ int my_put_number(int nb){
     }
 
     for (int j = i - 1; j >= 0; j--){
-        if (places_array[j] == 1){
-            putchar(49);
-        }else if (places_array[j] == 2){
-            putchar(50);
-        }else if (places_array[j] == 3){
-            putchar(51);
-        }else if (places_array[j] == 4){
-            putchar(52);
-        }else if (places_array[j] == 5){
-            putchar(53);
-        }else if (places_array[j] == 6){
-            putchar(54);
-        }else if (places_array[j] == 7){
-            putchar(55);
-        }else if (places_array[j] == 8){
-            putchar(56);
-        }else if (places_array[j] == 9){
-            putchar(57);
-        }else{
-            putchar(48);
-        }
+        putchar(places_array[j] + 48);
     }
 
     return 0;
